@@ -7,7 +7,7 @@ import java.util.List;
 public interface IMobileContactDAO {
     MobileContact insert(MobileContact mobileContact);
     MobileContact update(Long id, MobileContact mobileContact);
-    void delete(Long id);
+    void deleteById(Long id);
     MobileContact getById(Long id);
     List<MobileContact> getAll();
 
@@ -15,4 +15,5 @@ public interface IMobileContactDAO {
     MobileContact getByPhoneNumber(String phoneNumber);
     boolean userIdExists(Long id);
     boolean phoneNumberExists(String phoneNumber);
+
 }

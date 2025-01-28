@@ -17,4 +17,7 @@ public interface IMobileContactService {
     void deleteContactById(Long id) throws ContactNotFoundException;
     MobileContact getContactById(Long id) throws ContactNotFoundException;
     List<MobileContact> getAllContact();
+
+    MobileContact getContactByPhoneNumber(String phoneNumber) throws ContactNotFoundException;
+    void deleteContactByPhoneNumber(String phoneNumber) throws ContactNotFoundException;
 }
